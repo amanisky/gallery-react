@@ -135,7 +135,6 @@ export default class AppComponent extends React.Component {
 		imgsStateArr.splice(centerIndex, 0, centerImg);
 		
 		this.setState({imgsArrangeArr: imgsStateArr});
-		console.log(this.state.imgsArrangeArr, 1111, topImgNum);
 	}
 
 	/**
