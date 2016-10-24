@@ -25,8 +25,13 @@ export default class ImgFigure extends React.Component {
 			<figure className={ImgFigureClassName} style={this.props.arrange.pos} onClick={this.handleClick}>
 				<img src={this.props.data.imageUrl} alt={this.props.data.title} />
 				<figcaption>
-					<h2 className="img-title">{this.props.data.title}</h2>
-				</figcaption>
+                    <h2 className="img-title">{this.props.data.title}</h2>
+                    <div className="img-back">
+                      <p>
+                        {this.props.data.desc}
+                      </p>
+                    </div>
+                </figcaption>
 			</figure>
 		);
 	}
