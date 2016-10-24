@@ -72,6 +72,7 @@ body {
   text-align: left;
   background-color: #fff;
   box-sizing: border-box;
+  /* translateZ(1px) 解决 safari 3d 旋转，背面被正面覆盖的bug */
   transform: rotateY(180deg) translateZ(1px);
   backface-visibility: hidden;
 }
