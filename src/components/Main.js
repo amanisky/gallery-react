@@ -126,7 +126,6 @@ export default class AppComponent extends React.Component {
 			}
 		}
 
-		
 		// 将上侧图片状态放回原状态数组
 		if (topImgNum > 0) {
 			imgsStateArr.splice(topIndex, 0, topImg);

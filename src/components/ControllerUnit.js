@@ -22,7 +22,7 @@ export default class ControllerUnit extends React.Component {
 	}
 
 	// 控制组件
-	render() {;
+	render() {
 		var controllerUnitClassName = 'controller-unit';
 		if (this.props.arrange.isCenter) {
 			controllerUnitClassName += ' is-center';
