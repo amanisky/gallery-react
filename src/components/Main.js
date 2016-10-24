@@ -3,6 +3,7 @@ require('styles/App.css');
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ImgFigure from './ImgFigure';
+import ControllerUnit from './ControllerUnit';
 
 /**
  * 左分区取值范围
@@ -183,8 +184,11 @@ export default class AppComponent extends React.Component {
 					isCenter: false
 				};
 			}
-
+			// 构建图片组件
 			imgFigures.push(<ImgFigure arrange={this.state.imgsArrangeArr[index]} inverse={this.inverse(index)} center={this.center(index)} key={index} data={value} ref={'imgFigure' + index} />);
+
+			// 构建控制组件
+			controllerUnits.push(<ControllerUnit arrange={this.state.imgsArrangeArr[index]} inverse={this.inverse(index)} center={this.center(index)} key={index} />);
 		}.bind(this));
 
 		return (
